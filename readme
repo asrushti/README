@@ -45,11 +45,12 @@ Current Implementation:
 
 	Only the Sales Bill and Item Master screens are ready.
 	No actions have been defined on any field.
-	
+	The billing screen has been written in separate files but I am unable to make the Makefile work right now.
+	I have uploaded the make file.
+	The other new_item_entry.c is new screen and the code has net yet been put in separate files.
 	
 Commands to compile the 2 files:
 
 gcc new_item_entry.c -o try $(pkg-config --cflags --libs gtk+-3.0)
-gcc billing_screen.c -o try $(pkg-config --cflags --libs gtk+-3.0)
 
 
