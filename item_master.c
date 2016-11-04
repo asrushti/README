@@ -311,7 +311,7 @@ void item_master_view(GtkApplication *app, Window_grid *win_grid){
 	float rate, vat;
 	char *group, *category, *name, *unit, code_str[16], vat_str[20], rate_str[20], ch;
 	Item_master_display *master[MAX_VIEW];
-	win_grid->current_screen = MASTER;
+	
 	/*Create another window in which all the records will be displayed.*/
 	window = gtk_window_new(GTK_WINDOW_TOPLEVEL);
 
@@ -474,7 +474,7 @@ void item_master_view(GtkApplication *app, Window_grid *win_grid){
 		j++;
 		
 	}
-	
+	win_grid->current_screen = MASTER;
 	fclose(fp);
 	gtk_widget_show_all(view_window);
 	gtk_widget_show_all(window);
